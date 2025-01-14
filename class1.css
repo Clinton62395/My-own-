@@ -1,0 +1,44 @@
+h1 {
+  background-color: black;
+  color: yellow;
+  text-align: center;
+  font-size: 50px;
+  width: 500px;
+  height: auto;
+  margin-left: 11%;
+  border: 10px double rgb(244, 248, 2);
+  border-radius: 30px;
+  text-decoration: underline 3px rgb(241, 218, 4);
+}
+
+
+p {
+  width: 500px;
+  height: auto;
+
+  background-image: url(download.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 20px 30px;
+  margin: 40px 30px;
+
+  border: 20px ridge black;
+  border-radius: 50px;
+
+  text-align: justify;
+  text-shadow: 3px 2px 1px black;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  color: red;
+  text-transform: bold;
+}
+
+
+img {
+  width: 50%;
+  height: 100%;
+  border: 10px dashed purple;
+  margin: 50px;
+}

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body, html {
+        body,
+        html {
             margin: 0;
             padding: 0;
-            height:100%;
+            height: 100%;
         }
 
         .top-half {
@@ -16,9 +18,10 @@
             height: 50%;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             margin: 0px;
             padding: 0px;
+            flex-direction: column;
         }
 
         .bottom-half {
@@ -31,27 +34,26 @@
 
         h1 {
             color: white;
-            font-size: 30px;
-            margin: -20px;
-            padding: 20px;
-            border: 0px solid blueviolet;
-            text-decoration: none;
-            width: 100%;
-            background-color: blueviolet;
+            background-color: inherit;
+            margin-bottom: 15%;
+            margin-left: 40%;
+
+
         }
 
+
         form {
-            width: 80%;
-            height: 100vh;
+            width: 600px;
+            height: 500px;
             background-color: whitesmoke;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin: 10px;
-            margin-bottom:30%;
-            
+            margin-bottom: 30%;
+
         }
-        
+
         p {
             color: black;
             font-size: 20px;
@@ -66,6 +68,7 @@
             margin: 20px 0px;
             color: blueviolet;
         }
+
         label {
             color: black;
             font-size: 20px;
@@ -76,7 +79,7 @@
         input[type="email"],
         input[type="password"] {
             color: black;
-            width:600px;
+            width: 500px;
             height: 30px;
             padding: 10px;
             margin: 10px 30px;
@@ -94,7 +97,7 @@
         }
 
         button {
-            width: 600px;
+            width: 500px;
             background-color: rgb(3, 251, 234);
             color: white;
             border: none;
@@ -110,35 +113,41 @@
 
         button:hover {
             background-color: rgb(2, 167, 162);
+            color: black;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
         }
 
-        .a {
-            width: 600px;
+        a {
+            width: 500px;
             color: black;
             text-decoration: none;
             font-size: 20px;
-            border:none;
+            border: none;
             border-radius: 5px;
             background-color: rgb(219, 195, 195);
             text-align: center;
             padding: 20px 0px;
-            margin: 20px 30px;
+            margin: 20px 20px;
             padding-right: 35px;
             display: flow-root;
-            cursor: pointer;           
+            cursor: pointer;
         }
-        .a:hover {
+
+        a:hover {
             background-color: rgb(237, 50, 50);
             color: yellow;
             text-decoration: underline;
             font-size: 30px;
-            font-weight: bold;            
+            font-weight: bold;
         }
-        .link{
+
+        .link {
             border: none;
-            width: 50%;
+            width: 100px;
             border-radius: 10px;
-            background-color: rgb(36, 242, 17);
+            background-color: inherit;
             text-decoration: none;
             font-size: 20px;
             color: red;
@@ -147,9 +156,9 @@
             padding: 20px;
             list-style-type: circle;
             list-style-position: inside;
-            font-size: 25px;
-            
+
         }
+
         .link-border:hover a {
             color: black;
             text-decoration: underline;
@@ -164,23 +173,26 @@
             border: 1px solid yellow;
             background-color: black;
             border-radius: 10px;
-            color:wheat ;
+            color: wheat;
             box-shadow: 3px 5px 1px 5px red;
             text-decoration: none;
             font-size: 25px;
-            margin: 0px 80px ;
-            padding:0px 20px;
+            margin: 0px 80px;
+            padding: 0px 20px;
             display: flex;
         }
-
     </style>
 </head>
-<body>    
+
+<body>
+
     <div class="link-border">
         <p><a href="index.html">About guinea Anthem</a></p>
         <p><a href="class1.html">guinea national anthem</a></p>
         <p><a href="sign in.html">register </a></p>
         <p><a href="table-form.html">learn from table</a></p>
+        <a href="icons.html">Icones</a>
+
 
         <!-- <a href="index.html">About guinea Anthem</a><br><br>
         <a href="class1.html">guinea national anthem</a><br>
@@ -189,25 +201,28 @@
      -->
     </div>
 
-   <!-- <div class="link">
+    <!-- <div class="link">
     <ul>
         <li><a href="index.html">About guinea Anthem</a></li>
         <li><a href="class1.html">guinea national anthem</a></li>
         <li><a href="sign in.html">register</a></li>
         <li><a href="table-form.html">learn from table</a></li>
     </ul> -->
-   </div>
+    </div>
 
     <div class="top-half">
+        <h1>pixelgrade</h1>
+
     </div>
+
 
     <div class="bottom-half">
 
         <form action="">
-            <h1>pixelgrade</h1>
 
             <legend>Sign in</legend>
-            <p>you know how much a squirrel misses his nuts? Yep, that is how much we missed you. <br> <b>welcom back.</b></p>
+            <p>you know how much a squirrel misses his nuts? Yep, that is how much we missed you. <br> <b>welcom
+                    back.</b></p>
 
             <input type="email" name="" required placeholder="Username or Email Address"><br>
             <input type="password" name="" required placeholder="Password"><br>
@@ -216,8 +231,9 @@
             <div class="a">
                 <a href="">Continue with Envato</a>
             </div>
-            
+
         </form>
     </div>
 </body>
+
 </html>

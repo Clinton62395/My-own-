@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            width: fit-content;
+            font-size: 30px;
+            color: darkblue;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: #fc6464;
+        }
+
+        .menu {
+            width: fit-content;
+            list-style-type: none;
+            margin: 10;
+            padding: 5px;
+            background-color: rosybrown;
+        }
+
+        .menu-kind {
+            width: 100px;
+            padding: 12px 16px;
+            text-decoration: none;
+            cursor: pointer;
+            background-color: cadetblue;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .menu-kind:hover {
+            background-color: darkblue;
+            color: white;
+        }
+
+        .sub-menu1{
+            list-style-type: none;
+            margin: auto;
+            padding: 5px;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+        }
+        .sub-menu2 {
+            list-style-type: none;
+            margin: auto;
+            padding: 5px;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+        }
+
+        .drop-toggle:hover .sub-menu1{
+            display: block;
+            background-color: darkblue;
+            border: 1px solid #fafe;
+            padding: 10px;
+        }
+        .drop-toggle:hover .sub-menu2 {
+            display: block;
+            background-color: darkblue;
+            border: 1px solid #fafe;
+            padding: 10px;
+        }
+        .state{
+            list-style-type: none;
+            margin: auto;
+            padding: 5px;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+        }
+        .drop-toggle:hover .state {
+            display: block;
+            background-color: darkblue;
+            border: 1px solid #fafe;
+            padding: 10px;
+        }
+        .place {
+            list-style-type: none;
+            margin: auto;
+            padding: 5px;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+        }
+        .drop-toggle:hover .place {
+            display: block;
+            background-color: darkblue;
+            border: 1px solid #fafe;
+            padding: 10px;
+        }
+        .fonder {
+            list-style-type: none;
+            margin: auto;
+            padding: 5px;
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+        }
+        .drop-toggle:hover .fonder {
+            display: block;
+            background-color: darkblue;
+            border: 1px solid #fafe;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="index.html">About guinea Anthem</a>
+    <a href="class1.html">guinea national anthem</a>
+    <a href="sign in.html">register</a>
+    <a href="table-form.html">learn from table</a>
+    <a href="icons.html">Icones</a>
+    <a href="drop-toggle.html">My shop</a>
+
+    <h1>This is a list drop-toggle</h1>
+
+    <ol class="menu">
+        <li class="menu-kind drop-toggle">Country
+            <ul class="state">
+                <li>Nigeira</li>
+                <li>Guinea</li>
+                <li>Benin</li>
+            </ul>
+        </li>
+        <li class="menu-kind drop-toggle">city
+            <ul class="place">
+                <li>Lagos</li>
+                <li>Abuja</li>
+                <li>Ibadan</li>
+            </ul>
+        </li>
+        <li class="menu-kind drop-toggle">Shop
+            <ul class="fonder">
+                <li>Bill clinton</li>
+            </ul>
+        </li>
+        <li class="menu-kind drop-toggle">phone shop
+            <ul class="sub-menu1">
+                <li>samsung</li>
+                <li>tecno</li>
+                <li>vivo</li>
+                <li>apple</li>
+                <li>xiaomi</li>
+            </ul>
+        </li>
+        <li class="menu-kind of drop-toggle">book shop
+            <ul class="sub-menu2">
+                <li>jane austen</li>
+                <li>william shakespeare</li>
+                <li>tolkien</li>
+                <li>pride and prejudice</li>
+                <li>the catcher in the rye</li>
+            </ul>
+        </li>
+    </ol>
+</body>
+
+</html>

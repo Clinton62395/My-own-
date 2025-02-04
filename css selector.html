@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is CSS selectors</title>
+    <style>
+        * {
+            background-color: chocolate;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        /* .parent {
+            background-color: black;
+            color: yellow;
+            font-size: 30px; */
+        /* }
+
+        .parent p {
+            background-color: aqua;
+            color: black;
+        }
+
+        .parent h1 {
+            background-color: rgb(182, 182, 236);
+            font-size: 35px;
+            color: red;
+        }
+
+        .parent  .child{
+            background-color: rgb(11, 15, 0);
+            color: rgb(9, 252, 50);
+        } */
+
+        /* .parent> p{
+            background-color: black;
+            color: red;
+            font-size: 25px;
+        }
+    .parent> h1{
+        background-color: purple;
+        color: black;
+        font-size: 40px;
+    }
+    .parent> .child> p{
+        background-color: yellow;
+        color: black;
+        font-size: 25px;
+    }
+    .parent> .child> h1{
+        background-color: bisque;
+        color: brown;
+        font-size: 30px;
+    } */
+        /* .parent> .child> h1, p{
+        background-color: rgb(99, 18, 248);
+        color: yellow;
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+        width: fit-content;
+        padding: 10px;
+        margin: 10px;
+        
+    } */
+
+        /* p[title="para"] {
+            background-color: black;
+            color: yellow;
+            font-size: 30px;
+        }
+
+        h1[title="head"] {
+            background-color: blue;
+            color: black;
+            font-size: 40px;
+        } */
+
+
+        .heading,
+        .heading2,
+        .paragraphe {
+            color: white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .heading {
+            background-color: red;
+        }
+
+        .heading2 {
+            background-color: yellow;
+        }
+
+        .paragraphe {
+            background-color: green;
+        }
+
+        /* .paragraphe::first-letter{
+        color: red;
+        font-size: 50px;
+    }
+    .heading::first-letter{
+        color: rgb(30, 233, 3);
+        font-size: 80px;
+    }
+    .heading2::first-letter{
+        font-size: 70px;
+        color: violet;
+    } */
+
+        .letter::first-letter {
+            color: red;
+            font-size: 50px;
+            background-color: black;
+        }
+
+        .line::first-line {
+            color: rgb(99, 19, 248);
+            font-size: 30px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .mylist li:first-child{
+            background-color: black;
+            color: yellow;
+            font-size: 25px;
+            text-align: center;
+            list-style-type: none;
+        }
+        .mylist li:last-child{
+            background-color: rgb(2, 15, 92);
+            color: rgb(236, 17, 145);
+            font-size: 25px;
+            text-align: center;
+            list-style-type: none;
+        }
+        .mylist li:nth-child(3){
+            background-color: rgb(0, 1, 5);
+            color: rgb(141, 110, 177);
+            font-size: 25px;
+            text-align: center;
+            list-style-type: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <a href="index.html" class="link">About guinea Anthem</a>
+    <a href="class1.html" class="link">guinea national anthem</a>
+    <a href="sign in.html" class="link">register</a>
+    <a href="table-form.html" class="link">learn from table</a>
+    <a href="icons.html" class="link">Icones</a>
+    <a href="drop-toggle.html" class="link">My shop</a>
+    <a href="animation.html">animation</a>
+    <a href="css selector.html">CSS selectors</a>
+    <a href="media query.html">Page Responsive</a>
+
+
+
+    <!-- <div class="parent">
+        <h1 title="head">thi is descendant styling</h1>
+        <p title="para">this is first paragraphe</p>
+
+        <div class="child">
+            <h1 id="text">this is a heading of my first chil</h1>
+            <p>this is son of my first parent</p>
+
+        </div>
+    </div> -->
+
+    <h1 class="heading ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae adipisci sed impedit
+        aperiam ex totam aut
+        earum!
+    </h1>
+    <p class="paragraphe ">Veritatis explicabo repellendus modi quia repellat!</p>
+    <h2 class="heading2 ">Voluptate perspiciatis eius laborum aut quia tempora? </h2>
+
+    <p class="letter">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, repellendus!</p>
+    <p class="line">
+        Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore quaerat
+        distinctio sequi pariatur animi est veniam eius eveniet voluptatum aliquid. sit amet consectetur, adipisicing
+        elit. Harum quasi eos maiores tempore adipisci a nesciunt beatae nostrum eum facilis?
+    </p>
+
+    <ul class="mylist">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, aliquam.</li>
+        <li>Quibusdam alias consequuntur praesentium fuga commodi placeat, vel laborum modi?</li>
+        <li>Recusandae debitis, incidunt cumque molestiae numquam aliquid quod reprehenderit corrupti.</li>
+        <li>Officia, laudantium id est nemo aliquam pariatur architecto suscipit voluptas!</li>
+        <li>Voluptatum tempore maiores adipisci natus, recusandae vero excepturi iste ex?</li>
+    </ul>
+</body>
+
+</html>

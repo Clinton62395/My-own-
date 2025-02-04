@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query and Responsivness</title>
+</head>
+<style>
+    nav{
+        display: flex;
+        background-color: purple;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    .item{
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        background-color: inherit;
+    }
+    .sub-item-link{
+        display: inline;
+        list-style-type: none;
+        color: blue;
+        margin: 10px;
+        transition: all 0.5s linear infinite;
+    }
+    .sub-item-link:hover{
+        transform: scale(2);
+        background-color: black;
+        text-decoration: underline;
+    }
+    .sub-item-button{
+        color: white;
+        border: none;
+        background-color: inherit;
+        font-size: 25px;
+        margin: 10px;
+        padding: 10px;
+        animation: scale 5s linear infinite alternate;
+    }
+    @keyframes scale {
+        from{ transform: scale(1) }
+        to{ transform: scale(1.5)}
+    }
+
+</style>
+<body>
+
+    <a href="index.html">About guinea Anthem</a>
+    <a href="class1.html">guinea national anthem</a>
+    <a href="sign in.html">register</a>
+    <a href="table-form.html">learn from table</a>
+    <a href="icons.html">Icones</a>
+    <a href="drop-toggle.html">My shop</a>
+    <a href="css selector.html">CSS selectors</a>
+    <a href="animation.html">animation</a>
+    <a href="media query.html">Responsive Page </a>
+    <nav>
+       <div class="item">
+        👊
+       </div>
+       
+      <div class="item">
+        <ul>
+            <li class="sub-item-link">About Us</li>
+            <li class="sub-item-link">Contact</li>
+            <li class="sub-item-link">Services</li>
+            <li class="sub-item-link">Privacy</li>
+           </ul>
+      </div>
+
+       <div class="item">
+        <button class="sub-item-button">sign Up</button>
+        <button class="sub-item-button">Submit</button>
+       </div>       
+    </nav>
+    
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition, Animation, Transform</title>
+</head>
+<style>
+
+    .contener {
+        display: grid;
+        grid-template-columns: 100px 100px;
+        grid-template-rows: 100px 100px;
+        justify-content: center;
+        gap: 40px;
+        align-items: center;
+        padding: 20px;
+        background-color: rgb(30, 233, 172);
+        margin: 20px auto;
+    }
+
+
+    .contener div {
+        width: 100px;
+        height: 100px;
+        box-shadow: 2px -5px 10px green;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .rotate {
+        background-color: orangered;
+        transition: all 0.5s linear infinite;
+    }
+
+    .rotate:hover {
+        transform: rotate(45deg);
+        color: white;
+
+
+    }
+
+    .Scale {
+        background-color: rgb(250, 164, 6);
+        transition: all 1s linear infinite;
+    }
+
+    .Scale:hover {
+        transform: scale(1.2);
+        color: white;
+
+
+    }
+
+    .Skew {
+        background-color: yellow;
+        transition: all 1s linear infinite;
+
+
+    }
+
+    .Skew:hover {
+        transform: skew(20deg);
+        color: white;
+
+    }
+
+    .Translate {
+        background-color: rgb(27, 26, 26);
+        transition: all 1s linear infinite;
+    }
+
+    .Translate:hover {
+        transform: translatex(100px);
+        color: white;
+    }
+
+    
+
+    /* Keyframes */
+
+    .keyframes {
+        display: grid;
+        grid-template-columns:100px 100px ;
+        grid-template-rows:100px 100px;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(39, 2, 252);
+        gap: 50px;
+        margin: 20px auto;
+    }
+
+    .keyframes .second {
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 10px 5px yellow;
+    }
+
+    .rotat {
+        background-color: red;
+        transform: rotate(360deg);
+        animation: rotate 5s linear infinite;
+
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    .Scal {
+        background-color: rgb(107, 130, 179);
+        transform: scale(2);
+        animation: scale 5s linear infinite;
+    }
+
+    @keyframes scale {
+        from {
+            transform: scale(2);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+
+    .Ske {
+        background-color: green;
+        transform: skew(30deg);
+        animation: skew 5s linear infinite;
+    }
+
+    @keyframes skew {
+        from {
+            transform: skew(0deg);
+        }
+
+        to {
+            transform: skew(50deg)
+        }
+    }
+
+    .Translat {
+        background-color: rgb(255, 0, 140);
+        transform: translate(100px);
+        animation: translate 5s linear alternate infinite;
+    }
+
+    @keyframes translate {
+        from {
+            transform: translate(0px);
+        }
+
+        to {
+            transform: translate(100px);
+        }
+    }
+
+    a{
+  color: blue;
+  text-decoration: none;
+  transition: color 0.5s ease;
+  border: non solid black;
+  background-color: wheat;
+  margin: 10px 10px;
+  padding: 5px 10px;
+  font-size: 20px; 
+  border-radius: 20px;  
+}
+
+a:hover{
+  color: red;
+  background-color: black;
+  font-size: 25px;
+  text-decoration: underline;
+
+}
+</style>
+
+<body>
+
+    <a href="index.html">About guinea Anthem</a>
+    <a href="class1.html">guinea national anthem</a>
+    <a href="sign in.html">register </a>
+    <a href="table-form.html">learn from table </a>
+    <a href="icons.html">Icones</a>
+    <a href="drop-toggle.html">My shop</a>
+    <a href="css selector.html">CSS selectors</a>
+    <a href="animation.html">animation</a>
+    <a href="media query.html">Page Responsive</a>
+
+
+
+    <div class="contener">
+        <div class="rotate"> rotate</div>
+        <div class="Scale">Scale</div>
+        <div class="Skew">Skew</div>
+        <div class="Translate">Translate</div>
+    </div>
+
+    <div class="keyframes">
+        <div class="rotat second"> rotate</div>
+        <div class="Scal second">Scale</div>
+        <div class="Ske second">Skew</div>
+        <div class="Translat second">Translate</div>
+    </div>
+</body>
+
+</html>

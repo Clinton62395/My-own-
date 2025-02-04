@@ -6,21 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        *{
+            background-color: #fc6464;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25px;
+            color: black;
+        }
+
         h1 {
             width: fit-content;
             font-size: 30px;
             color: darkblue;
             text-align: center;
             text-transform: uppercase;
-            background-color: #fc6464;
+            /* background-color: #fc6464; */
+            
         }
 
+
         .menu {
-            width: fit-content;
+            display: flex;
+            width: 600px;
+            height: 100px;
             list-style-type: none;
             margin: 10;
             padding: 5px;
             background-color: rosybrown;
+            justify-content: center;
+            align-items: center;
+            transition-property: all;
+            transition-duration: 5s;
+            transition-timing-function: ease-in;
+            /* animation-timing-function: ease-in-out;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+            animation-direction: normal; */
+            
+        }
+        .menu:hover{
+            transform: rotate(90deg);
+            background-color: violet;
+            border: 5px ridge black;
         }
 
         .menu-kind {
@@ -131,6 +158,12 @@
             font-size: 20px;
             text-decoration: underline;
         }
+        /* @keyframes translate{
+            from{translate: 0px} 
+            to{translate: 200px} 
+           from{rotate: 0deg}
+           to{rotate: 360deg}
+        } */
     </style>
 </head>
 
@@ -143,31 +176,36 @@
     <a href="table-form.html" class="link">learn from table</a>
     <a href="icons.html" class="link">Icones</a>
     <a href="drop-toggle.html" class="link">My shop</a>
+    <a href="css selector.html">CSS selectors</a>
+    <a href="animation.html">animation</a>
+    <a href="media query.html">Page Responsive</a>
+
+
 </div>
 
     <h1>This is a list drop-toggle</h1>
 
     <ol class="menu">
-        <li class="menu-kind drop-toggle">Country
+        <li class="menu-kind drop-toggle display">Country
             <ul class="state">
                 <li>Nigeira</li>
                 <li>Guinea</li>
                 <li>Benin</li>
             </ul>
         </li>
-        <li class="menu-kind drop-toggle">city
+        <li class="menu-kind drop-toggle display">city
             <ul class="place">
                 <li>Lagos</li>
                 <li>Abuja</li>
                 <li>Ibadan</li>
             </ul>
         </li>
-        <li class="menu-kind drop-toggle">Shop
+        <li class="menu-kind drop-toggle display">Shop
             <ul class="fonder">
                 <li>Bill clinton</li>
             </ul>
         </li>
-        <li class="menu-kind drop-toggle">phone shop
+        <li class="menu-kind drop-toggle display">phone shop
             <ul class="sub-menu1">
                 <li>samsung</li>
                 <li>tecno</li>
@@ -176,7 +214,7 @@
                 <li>xiaomi</li>
             </ul>
         </li>
-        <li class="menu-kind of drop-toggle">book shop
+        <li class="menu-kind of drop-toggle display">book shop
             <ul class="sub-menu2">
                 <li>jane austen</li>
                 <li>william shakespeare</li>

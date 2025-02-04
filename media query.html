@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query and Responsivness</title>
 </head>
 <style>
-    nav{
+    nav {
         display: flex;
         background-color: purple;
         justify-content: space-between;
         align-items: center;
         padding: 10px;
     }
-    .item{
+
+    .item {
         color: white;
         font-size: 25px;
         font-weight: bold;
         background-color: inherit;
     }
-    .sub-item-link{
+
+    .sub-item-link {
         display: inline;
         list-style-type: none;
         color: blue;
         margin: 10px;
         transition: all 0.5s linear infinite;
     }
-    .sub-item-link:hover{
+
+    .sub-item-link:hover {
         transform: scale(2);
         background-color: black;
         text-decoration: underline;
     }
-    .sub-item-button{
+
+    .sub-item-button {
         color: white;
         border: none;
         background-color: inherit;
@@ -40,12 +45,39 @@
         padding: 10px;
         animation: scale 5s linear infinite alternate;
     }
+
     @keyframes scale {
-        from{ transform: scale(1) }
-        to{ transform: scale(1.5)}
+        from {
+            transform: scale(1)
+        }
+
+        to {
+            transform: scale(1.5)
+        }
     }
 
+    /* link */
+    a {
+        color: blue;
+        text-decoration: none;
+        transition: color 0.5s ease;
+        border: non solid black;
+        background-color: wheat;
+        margin: 10px 10px;
+        padding: 5px 10px;
+        font-size: 20px;
+        border-radius: 20px;
+    }
+
+    a:hover {
+        color: red;
+        background-color: black;
+        font-size: 25px;
+        text-decoration: underline;
+
+    }
 </style>
+
 <body>
 
     <a href="index.html">About guinea Anthem</a>
@@ -58,24 +90,25 @@
     <a href="animation.html">animation</a>
     <a href="media query.html">Responsive Page </a>
     <nav>
-       <div class="item">
-        👊
-       </div>
-       
-      <div class="item">
-        <ul>
-            <li class="sub-item-link">About Us</li>
-            <li class="sub-item-link">Contact</li>
-            <li class="sub-item-link">Services</li>
-            <li class="sub-item-link">Privacy</li>
-           </ul>
-      </div>
+        <div class="item">
+            👊
+        </div>
 
-       <div class="item">
-        <button class="sub-item-button">sign Up</button>
-        <button class="sub-item-button">Submit</button>
-       </div>       
+        <div class="item">
+            <ul>
+                <li class="sub-item-link">About Us</li>
+                <li class="sub-item-link">Contact</li>
+                <li class="sub-item-link">Services</li>
+                <li class="sub-item-link">Privacy</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <button class="sub-item-button">sign Up</button>
+            <button class="sub-item-button">Submit</button>
+        </div>
     </nav>
-    
+
 </body>
+
 </html>
